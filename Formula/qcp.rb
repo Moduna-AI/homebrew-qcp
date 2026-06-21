@@ -13,6 +13,11 @@ class Qcp < Formula
   # Depend on Homebrew's stable python
   depends_on "python@3.14"
 
+  resource "click" do
+    url "https://pythonhosted.org"
+    sha256 "ca11503beb18a4d44dcb7da6336217c3d22b21030022d203cf66c43e7a726fe7"
+  end
+
   def install
     virtualenv_install_with_resources
   end
