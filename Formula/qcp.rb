@@ -14,13 +14,7 @@ class Qcp < Formula
   depends_on "python@3.14"
 
   def install
-    # 1. Creates an isolated private virtual environment inside the Cellar
-    venv = virtualenv_create(libexec, "python3.14")
-    
-    # 2. Installs your tool and its requirements directly into that environment
-    # This automatically reads your pyproject.toml / setup.py entry_points
-    # and links the global executable to Homebrew's public bin folder
-    venv.pip_install_and_link buildpath
+    virtualenv_install_with_resources
   end
 
   test do
