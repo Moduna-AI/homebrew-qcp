@@ -14,7 +14,7 @@ class Qcp < Formula
   
   def install
     # 1. Create a native Homebrew virtual environment inside libexec
-    venv = virtualenv_create(libexec, "python3.14")
+    venv = virtualenv_create(libexec, "python3.13")
     
     # 2. Tell the internal pip to pull your app and its dependencies from PyPI
     # Using --no-binary ensures it compiles neatly for the user's system architecture
