@@ -11,7 +11,7 @@ class Qcp < Formula
   license "MIT"
 
   # Depend on Homebrew's stable python
-  depends_on "python@3.13"
+  depends_on "python@3.14"
 
   def install
     virtualenv_install_with_resources
