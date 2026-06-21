@@ -10,11 +10,18 @@ class Qcp < Formula
   sha256 "97c5aadf0abca0815bbf0cc07fabb43b1203fa5fc17f5d1e4bdacd9b7fed1be9"
   license "MIT"
 
-  depends_on "uv"
-
+  depends_on "python@3.14"
+  
   def install
-    # Use uv to cleanly build, resolve dependencies, and isolate the binary into Homebrew
-    system "uv", "tool", "install", "--root", prefix, "qcp-cli==#{version}"
+    # 1. Create a native Homebrew virtual environment inside libexec
+    venv = virtualenv_create(libexec, "python3.14")
+    
+    # 2. Tell the internal pip to pull your app and its dependencies from PyPI
+    # Using --no-binary ensures it compiles neatly for the user's system architecture
+    venv.pip_install "qcp-cli==#{version}"
+    
+    # 3. Create a global symlink into Homebrew's binary directory
+    bin.install_symlink libexec/"bin/qcp"
   end
 
   test do
