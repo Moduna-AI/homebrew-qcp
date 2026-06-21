@@ -10,7 +10,7 @@ class Qcp < Formula
   sha256 "4885fdcc9a05cc9aefb5ad26a8b86267b3c88f70c3afcf43ee82a737c72b1d78"
   license "MIT"
 
-  ddepends_on "python@3.12"
+  depends_on "python@3.12"
 
   def install
     venv = virtualenv_create(libexec, "python3.12")
