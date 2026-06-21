@@ -15,7 +15,7 @@ class Qcp < Formula
 
   resource "click" do
     url "https://pythonhosted.org"
-    sha256 "ca11503beb18a4d44dcb7da6336217c3d22b21030022d203cf66c43e7a726fe7"
+    sha256 "13ab279d520146a3401d56af946699ca40de062082cfe1d721c5afe301941971"
   end
 
   def install
