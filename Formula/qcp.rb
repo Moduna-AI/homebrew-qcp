@@ -11,7 +11,7 @@ class Qcp < Formula
   license "MIT"
 
   # Depend on Homebrew's stable python
-  depends_on "python@3.14"
+  depends_on "python@3.13"
 
   resource "click" do
     url "https://pythonhosted.org"
