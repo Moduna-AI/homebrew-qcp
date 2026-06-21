@@ -8,7 +8,6 @@ class Qcp < Formula
   homepage "https://github.com"
   url "https://files.pythonhosted.org/packages/0d/b0/0f6f21d8f5601d2ce4d9f7f77f4bb515ea5d7a83b6a513a170490035f85c/qcp_cli-0.1.7.tar.gz"
   sha256 "97c5aadf0abca0815bbf0cc07fabb43b1203fa5fc17f5d1e4bdacd9b7fed1be9"
-  version "0.1.4"
   license "MIT"
 
   # Depend on Homebrew's stable python
@@ -21,7 +20,7 @@ class Qcp < Formula
     # 2. Installs your tool and its requirements directly into that environment
     # This automatically reads your pyproject.toml / setup.py entry_points
     # and links the global executable to Homebrew's public bin folder
-    venv.pip_install_and_link_binary_sync(buildpath)
+    venv.pip_install_and_link buildpath
   end
 
   test do
