@@ -10,11 +10,11 @@ class Qcp < Formula
   sha256 "97c5aadf0abca0815bbf0cc07fabb43b1203fa5fc17f5d1e4bdacd9b7fed1be9"
   license "MIT"
 
-  # Depend on Homebrew's stable python
-  depends_on "python@3.14"
+  depends_on "uv"
 
   def install
-    virtualenv_install_with_resources
+    # Use uv to cleanly build, resolve dependencies, and isolate the binary into Homebrew
+    system "uv", "tool", "install", "--root", prefix, "qcp-cli==#{version}"
   end
 
   test do
