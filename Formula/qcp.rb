@@ -6,8 +6,8 @@ class Qcp < Formula
 
   desc "Query Companion: query Postgres databases in natural language"
   homepage "https://github.com"
-  url "https://files.pythonhosted.org/packages/66/83/2ef75c2710e795f54abc288dcee616a72982006205e23f7f782820a8ff35/qcp_cli-0.1.8.tar.gz"
-  sha256 "4885fdcc9a05cc9aefb5ad26a8b86267b3c88f70c3afcf43ee82a737c72b1d78"
+  url "https://files.pythonhosted.org/packages/d9/67/5dc013917808f74048c438fef55a4f0479987d4c182deef22fa3ab153373/qcp_cli-0.1.10.tar.gz"
+  sha256 "0a6758a4127bf44f1cd77169aecdac43c40afa8deb93cbb723523987bc75b432"
   license "MIT"
 
   depends_on "python@3.13"
