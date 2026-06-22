@@ -5,17 +5,17 @@ class Qcp < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Moduna-AI/qcp-cli/releases/download/v0.1.10/qcp-arm64"
-      sha256 "PLACEHOLDER"
+      url "file:///Users/ashwin/Documents/github/qcp-cli/dist/qcp-arm64"
+      sha256 "a4c59a833a2cf4af26ca1a2b9e996b6fe15e0aed856670d9beb7bb322cd87641"
     end
     on_intel do
-      url "https://github.com/Moduna-AI/qcp-cli/releases/download/v0.1.10/qcp-x86_64"
-      sha256 "PLACEHOLDER"
+      url "file:///Users/ashwin/Documents/github/qcp-cli/v0.1.10/qcp-x86_64"
+      sha256 "a4c59a833a2cf4af26ca1a2b9e996b6fe15e0aed856670d9beb7bb322cd87641"
     end
   end
 
   def install
-    bin.install Dir["qcp*"].first => "qcp"
+    bin.install bin.install "qcp-arm64" => "qcp"
   end
 
   test do
