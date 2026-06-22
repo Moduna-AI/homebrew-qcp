@@ -1,16 +1,16 @@
 class Qcp < Formula
   desc "Query Companion: query Postgres databases in natural language"
   homepage "https://github.com/Moduna-AI/qcp-cli"
-  version "0.1.11"
+  version "0.1.12.alpha.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Moduna-AI/qcp-cli/releases/download/v0.1.11/qcp-arm64"
-      sha256 "50e7d37959c9aa0e6658d71093143d79fa40d70b6a2919f93413b16f5ab4f2b4"
+      url "https://github.com/Moduna-AI/qcp-cli/releases/download/v0.1.12.alpha.0/qcp-arm64"
+      sha256 "289db0c3588ae8a7f039fccbbaa566a82392d1b64f9f5df85a3d63717fe66d86"
     end
     on_intel do
-      url "https://github.com/Moduna-AI/qcp-cli/releases/download/v0.1.11/qcp-x86_64"
-      sha256 "1e1ea607139cd10f553fb65b36b9d8697af742721273db5341bc437583fb5cbe"
+      url "https://github.com/Moduna-AI/qcp-cli/releases/download/v0.1.12.alpha.0/qcp-x86_64"
+      sha256 "4409b963c353913a22bf0e8b981f3f7f79da0b3f5325196854725ff2ec0a75d1"
     end
   end
 
