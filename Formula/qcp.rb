@@ -12,7 +12,7 @@ class Qcp < Formula
   desc "AI-powered CLI for querying PostgreSQL in natural language"
   homepage "https://github.com/Moduna-AI/qcp"
   license "MIT"
-  version 0.1.1
+  version "0.1.1"
 
   head "https://github.com/Moduna-AI/qcp.git", branch: "main"
 
