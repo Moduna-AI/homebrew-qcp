@@ -12,7 +12,7 @@ class Qcp < Formula
   desc "AI-powered CLI for querying PostgreSQL in natural language"
   homepage "https://github.com/Moduna-AI/qcp"
   license "MIT"
-  version "0.2.3"
+  version "0.2.4"
 
   head "https://github.com/Moduna-AI/qcp.git", branch: "main"
 
@@ -20,19 +20,19 @@ class Qcp < Formula
   on_macos do
     on_arm do
       url "https://github.com/Moduna-AI/qcp/releases/download/v#{version}/qcp-macos-arm64"
-      sha256 "998b86d24ad73de707873c1ce12e2d8464c224ea72ec556d1575e44dc1f3b2b8"
+      sha256 "1c57c3d7f6e97cc15832606e0532544c0c917060ee563dddcb07ed68f32a961a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Moduna-AI/qcp/releases/download/v#{version}/qcp-linux-x64"
-      sha256 "2fa07a2793f1f8bcd80e88c2458f0c8cc93f29da4265dd1c6bc67cf043ed363a"
+      sha256 "d5dbb135bb50edf69acb27de082fe940c8fc915146518489e19042a881f7940b"
     end
 
     on_arm do
       url "https://github.com/Moduna-AI/qcp/releases/download/v#{version}/qcp-linux-arm64"
-      sha256 "63e043c09c45cea385e0f5a714f8c5c4fd6a260d43d9ad26cb78d84af65f1161"
+      sha256 "84efa2c2edf6b1ee28c8e60ef3573967d701ac5d7c370ee9c3fe2118860273eb"
     end
   end
 
